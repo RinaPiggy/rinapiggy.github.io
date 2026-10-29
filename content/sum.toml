@@ -1,0 +1,4 @@
+type = "text"
+title = "Forecasting shared mobility in the RET app"
+description = "From operator data to forecasts that travellers can use."
+source = "sum.md"

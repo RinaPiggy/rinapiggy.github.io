@@ -1,0 +1,4 @@
+type = "publication"
+title = "Publications"
+description = "Selected published work and a preprint. STAMP, currently under review, is described on its project page."
+source = "publications.bib"

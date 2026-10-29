@@ -1,0 +1,4 @@
+type = "text"
+title = "STAMP"
+description = "Joint forecasting of demand and charge-aware fleet availability."
+source = "stamp.md"

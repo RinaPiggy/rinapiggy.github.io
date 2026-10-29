@@ -1,0 +1,10 @@
+type = "card"
+title = "Blog"
+description = "Thoughts on urban transport and city logistics, research updates in plain language, and notes to accompany my videos."
+
+[[items]]
+title = "Real-Time Demand Forecasting in Shared Mobility: A Deep Dive"
+subtitle = "Research explainer · Video companion"
+content = "How can we predict where shared vehicles will be needed, and turn those predictions into better journeys? A plain-language look at demand forecasting, first- and last-mile connections, and the practical challenges of bringing models into use. [Read the article](/blog/real-time-demand-forecasting/)."
+link = "/blog/real-time-demand-forecasting/"
+tags = ["Shared mobility", "Forecasting", "SUM project", "Video"]

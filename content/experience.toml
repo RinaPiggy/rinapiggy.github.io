@@ -1,0 +1,4 @@
+type = "text"
+title = "Experience"
+description = "Research, industry collaboration and technical mentorship."
+source = "experience.md"

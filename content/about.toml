@@ -1,0 +1,25 @@
+type = "about"
+title = "About"
+[profile]
+research_interests = ["Probabilistic forecasting", "Spatio-temporal learning", "Reinforcement learning", "Urban transport & city logistics"]
+[[sections]]
+id = "intro"
+type = "markdown"
+source = "bio.md"
+title = "About"
+[[sections]]
+id = "selected-work"
+type = "projects"
+source = "projects.toml"
+title = "Selected work"
+[[sections]]
+id = "featured_publications"
+type = "publications"
+title = "Selected publications"
+filter = "selected"
+limit = 2
+[[sections]]
+id = "collaboration"
+type = "markdown"
+source = "contact.md"
+title = "Let’s connect"

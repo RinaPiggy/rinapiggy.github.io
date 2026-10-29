@@ -1,0 +1,4 @@
+type = "text"
+title = "T-STAR"
+description = "Probabilistic demand forecasting for sparse, high-frequency time series."
+source = "t-star.md"

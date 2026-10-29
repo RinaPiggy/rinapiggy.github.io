@@ -1,0 +1,59 @@
+[site]
+title = "Rina Cheng"
+description = "Rina Cheng is a PhD researcher in TU Delft’s Department of Transport & Planning, specialising in applied machine learning for urban transport and city logistics."
+favicon = "/favicon.svg"
+last_updated = "October 29, 2026"
+[author]
+name = "Rina Cheng"
+title = "PhD Researcher · Applied Machine Learning"
+institution = "Delft University of Technology"
+department = "Department of Transport & Planning"
+focus = "Urban Transport & City Logistics"
+avatar = "/images/rina-cheng.png"
+[social]
+email = "rina.jingyi.cheng@gmail.com"
+location = "The Netherlands"
+google_scholar = "https://scholar.google.com/citations?user=V7bdGrYAAAAJ&hl=en"
+github = "https://github.com/RinaPiggy"
+linkedin = "https://www.linkedin.com/in/rina-cheng-93136916a/"
+[features]
+enable_likes = false
+enable_one_page_mode = false
+[i18n]
+enabled = false
+locales = ["en"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = false
+switcher = false
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+[[navigation]]
+title = "Projects"
+type = "page"
+target = "projects"
+href = "/projects"
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+[[navigation]]
+title = "Experience"
+type = "page"
+target = "experience"
+href = "/experience"
+[[navigation]]
+title = "Blog"
+type = "page"
+target = "blog"
+href = "/blog"
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"

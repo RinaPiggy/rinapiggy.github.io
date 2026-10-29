@@ -1,0 +1,4 @@
+type = "text"
+title = "Curriculum vitae"
+description = "Applied machine learning for urban transport and city logistics."
+source = "cv.md"

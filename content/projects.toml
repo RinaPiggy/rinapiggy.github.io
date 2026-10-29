@@ -1,0 +1,27 @@
+type = "card"
+title = "Projects"
+description = "Applied machine learning for urban transport and city logistics: from probabilistic forecasting to live services and operational decisions."
+[[items]]
+title = "Forecasting shared mobility in the RET app"
+subtitle = "SUM · Industry deployment"
+date = "2023–2026"
+content = "I led modelling and coordinated delivery of a live service forecasting CHECK vehicle availability in Rotterdam, working with RET, Siemens Mobility and Infoplaza. [Read the case study](/sum/)."
+image = "/images/walkthrough-7-1.png"
+link = "/sum/"
+tags = ["Live service", "XGBoost", "Industry collaboration"]
+[[items]]
+title = "T-STAR"
+subtitle = "Probabilistic demand forecasting"
+date = "Published 2026"
+content = "A two-stage transformer framework for sparse demand at 15-minute resolution, evaluated across 235 bike-sharing stations, including transfer to unseen service areas. [Read the case study](/t-star/)."
+image = "/images/t-star.jpg"
+link = "/t-star/"
+tags = ["Transformers", "Time series", "Open source"]
+[[items]]
+title = "STAMP"
+subtitle = "Joint demand and usable-supply forecasting"
+date = "Under review"
+content = "An adaptive graph-based multi-task framework jointly forecasting demand, fleet size and low-battery vehicles up to four hours ahead. [Read the case study](/stamp/)."
+image = "/images/stamp-demand-supply-patterns.png"
+link = "/stamp/"
+tags = ["Graph learning", "Multi-task learning", "Uncertainty"]
