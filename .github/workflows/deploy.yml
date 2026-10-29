@@ -1,0 +1,62 @@
+name: Publish personal website
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
+    steps:
+      - uses: actions/checkout@v4
+      - name: Expand the reviewed initial upload
+        if: ${{ hashFiles('Rina_Website_Source.zip') != '' }}
+        run: |
+          python - <<'PY'
+          import zipfile
+          from pathlib import Path
+          root = Path.cwd().resolve()
+          with zipfile.ZipFile('Rina_Website_Source.zip') as archive:
+              for item in archive.infolist():
+                  if item.filename.startswith('.github/'):
+                      continue
+                  target = (root / item.filename).resolve()
+                  if root not in target.parents:
+                      raise ValueError('Unexpected archive path')
+                  archive.extract(item, root)
+          Path('Rina_Website_Source.zip').unlink()
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "Expand website source for future updates"
+          git push
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/configure-pages@v5
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4
