@@ -8,6 +8,11 @@ type = "markdown"
 source = "bio.md"
 title = "About"
 [[sections]]
+id = "news"
+type = "list"
+source = "news.toml"
+title = "News"
+[[sections]]
 id = "selected-work"
 type = "projects"
 source = "projects.toml"
