@@ -12,7 +12,7 @@ I’m a PhD researcher in **TU Delft’s Department of Transport & Planning**, s
 
 ## Technical strengths
 
-Python · PyTorch · Hugging Face models · OpenAI Gym · XGBoost · Probabilistic forecasting · Transformers · Graph learning · Deep reinforcement learning
+Python · PyTorch · Forecasting performance validation · OpenAI Gym · XGBoost · Probabilistic forecasting · Transformers · Graph learning · Deep reinforcement learning
 
 ## Education
 
